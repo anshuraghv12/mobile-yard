@@ -14,6 +14,7 @@ import Footer2 from './components/customComponents/figma/Footer2'
 import StartupCarousel from './components/customComponents/figma/StartupCarousel'
 // import StatisticsSection from './components/customComponents/figma/JazbaaStats'
 import DeviceCards from './components/customComponents/figma/devicecards'
+import AboutShop from './components/customComponents/figma/AboutShop'
 
 
 export default function Home() {
@@ -22,8 +23,9 @@ export default function Home() {
 
   <Navbar />
   <Hero />
-   <TeamGrid />
+  <TeamGrid />
   <DeviceCards />
+  <AboutShop/>
   
   
   {/* <StatisticsSection />
