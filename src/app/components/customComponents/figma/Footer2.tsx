@@ -1,111 +1,67 @@
+import React from 'react';
+import { Phone, Mail, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
 
-import hash13 from "../../../../../public/assets/logohash13.svg";
-import lwlogo from "../../../../../public/assets/LW-white.png";
-import { FaLinkedin, FaInstagram, FaYoutube, FaFacebook, FaTwitter } from "react-icons/fa";
-import Image from "next/legacy/image"
-import Footer from "./Footer";
-
-export default function Footer2() {
-  
-
+const Footer = () => {
   return (
-    <footer className="bg-black text-white py-8">
-        
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Column 1: Brand Info with Logos */}
-        <div>
-          <h2 className="text-xl font-bold text-white">
-          Job Oriented Global :<span className="text-[#ff0000]">  DevOps Program </span>
-          </h2>
-          <p className="text-lg text-blue-400 mt-2 leading-relaxed text-cyan-400">
-          &quot;Making India 
-  <span>
-    <Image 
-      src="/assets/flag.png" 
-      alt="Indian Flag" 
-      width={20} 
-      height={14} 
-      style={{ display: 'inline-block', marginLeft: '4px', verticalAlign: 'middle' }} 
-    />
-   &nbsp; </span> 
-   Future Ready&quot;
-</p>
-
-
-          <p className="text-sm text-gray-400 font-italic mt-6">Powered By:</p>
-          {/* Logos */}
-          <div className="mt-4 flex gap-4 mx-auto">
-          <span>  <Image src={lwlogo.src.toString()} width={110} height={48} alt="Logo" /></span>
-            <div className="flex items-center justify-center">
-              <span className="text-4xl text-[#ff0000]" style={{ height: '80px', borderLeft: '2px solid #ff0000' }}></span> {/* Pipe with larger height */}
-            </div>
-           <span> <Image src={hash13.src.toString()} width={96} height={48} alt="Logo" /></span>
+    <footer className="bg-gray-900 text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid md:grid-cols-4 gap-8">
+          <div>
+            <h3 className="text-xl font-bold mb-4">Mobile Yard</h3>
+            <p className="text-gray-400">Your trusted partner for all mobile phone needs. Quality products and expert service guaranteed.</p>
           </div>
-        
-
-        <div className="mt-6 flex gap-6 justify-start items-center">
-            <a
-              href="https://www.linkedin.com/company/linuxworld-informatics-pvt-ltd/?originalSubdomain=in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 text-2xl hover:text-blue-800"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="https://www.instagram.com/linuxworld.india/?hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-pink-500 text-2xl hover:text-pink-700"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              href="https://www.youtube.com/@IIECconnect"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-red-600 text-2xl hover:text-red-800"
-            >
-              <FaYoutube />
-            </a>
-            <a
-              href="https://www.facebook.com/LinuxWorld.India/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 text-2xl hover:text-blue-700"
-            >
-              <FaFacebook />
-            </a>
-            <a
-              href="https://x.com/Linuxworldindia"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sky-400 text-2xl hover:text-sky-600"
-            >
-              <FaTwitter />
-            </a>
+          
+          <div>
+            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-gray-400 hover:text-white">Home</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white">Products</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white">Services</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white">About Us</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-xl font-bold mb-4">Contact Info</h3>
+            <ul className="space-y-2">
+              <li className="flex items-center">
+                <Phone className="h-5 w-5 mr-2" />
+                <span className="text-gray-400">+44 123 456 7890</span>
+              </li>
+              <li className="flex items-center">
+                <Mail className="h-5 w-5 mr-2" />
+                <span className="text-gray-400">info@mobileyard.com</span>
+              </li>
+              <li className="flex items-center">
+                <MapPin className="h-5 w-5 mr-2" />
+                <span className="text-gray-400">123 High Street, London, UK</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-xl font-bold mb-4">Follow Us</h3>
+            <div className="flex space-x-4">
+              <a href="#" className="text-gray-400 hover:text-white">
+                <Facebook className="h-6 w-6" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white">
+                <Twitter className="h-6 w-6" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white">
+                <Instagram className="h-6 w-6" />
+              </a>
             </div>
+          </div>
         </div>
-
-
-        {/* Column 2: Cloudinary Video Stream */}
-        <div className="flex justify-center items-center">
-        <iframe
-    width="420"
-    height="250"
-    src="https://www.youtube.com/embed/dqIsmWjbtfQ?si=JRgPBQsu4PIvUMpy"
-    title="YouTube video player"
-    
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-></iframe>
-
+        
+        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p className="text-gray-400">&copy; {new Date().getFullYear()} Mobile Yard. All rights reserved.</p>
         </div>
-      </div>
-
-      {/* Footer Bottom */}
-      <div className="text-center mt-8 text-white text-sm">
-        © Copyright 2024 TGS | Designed & Developed with ❤️ by LinuxWorld | All Rights Reserved
       </div>
     </footer>
   );
 }
+
+export default Footer;

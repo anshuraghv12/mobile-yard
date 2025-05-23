@@ -15,6 +15,7 @@ import StartupCarousel from './components/customComponents/figma/StartupCarousel
 // import StatisticsSection from './components/customComponents/figma/JazbaaStats'
 import DeviceCards from './components/customComponents/figma/devicecards'
 import AboutShop from './components/customComponents/figma/AboutShop'
+import WhyChooseUs from './components/customComponents/figma/WhyChooseUS'
 
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
   <TeamGrid />
   <DeviceCards />
   <AboutShop/>
+  <WhyChooseUs/>
   
   
   {/* <StatisticsSection />
